@@ -47,16 +47,25 @@ body{
     opacity: 0;
     visibility: hidden;
     transform: scale(1);
-    transition: all 300ms ease;
-
+    transition: all 500ms ease-in-out;
+    
 }
 
 .selection__image{
-    width: 55rem;
-    height: 70rem;
-    overflow: hidden ;
+    width: 35rem;
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.image__selected {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+}
 .selection__show{
     opacity: 1;
     visibility: visible;
